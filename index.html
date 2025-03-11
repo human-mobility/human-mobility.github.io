@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Web-Centric Human Mobility Analytics - WWW 2025 Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web-Centric Human Mobility Analytics: Methods, Applications, and Future Directions in the LLM Era">
+    <meta name="author" content="WWW 2025 Tutorial Team">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .page-header {
+            background: rgba(255, 255, 255, 0.3) url('assets/images/sydney.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 1.5rem;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(to right, rgba(52, 152, 219, 0.1), rgba(52, 152, 219, 0.8), rgba(52, 152, 219, 0.1));
+            margin: 1.8rem 0;
+            border-radius: 4px;
+        }
+        
+        h2 {
+            border-left: 4px solid #3498db;
+            padding-left: 12px;
+            margin-top: 1.8rem;
+            color: #2c3e50;
+            font-size: 1.6rem;
+            letter-spacing: 0.3px;
+        }
+        
+        .tutorial-section {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        
+        .tutorial-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-color: rgba(52, 152, 219, 0.2);
+        }
+        
+        .tutorial-section strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0 1.5rem;
+            flex-wrap: wrap;
+            background: rgba(248, 249, 250, 0.8);
+            padding: 0.6rem;
+            border-radius: 50px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+        }
+        
+        .nav-menu a {
+            padding: 0.6rem 1.2rem;
+            margin: 0 0.5rem;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-menu a:hover {
+            background-color: #3498db;
+            color: white;
+            box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .highlight-box {
+            background-color: rgba(52, 152, 219, 0.08);
+            border-left: 4px solid #3498db;
+            padding: 1.2rem;
+            margin: 1.2rem 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body>
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav">
+                    <button><div class="navicon"></div></button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg">
+                            <a href="#">Web-Centric Human Mobility Analytics</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="page__inner-wrap">
+            <section class="page__content" itemprop="text">
+                <center>
+                    <p style="margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px; text-transform: uppercase;">WWW 2025 Tutorial</p>
+                    <h1 style="font-size: 2.2rem; max-width: 900px; margin: 0 auto 1rem;">Web-Centric Human Mobility Analytics: Methods, Applications,
+                        and Future Directions in the LLM Era</h1>
+                    <div style="margin: 20px 0; background: rgba(255,255,255,0.5); display: inline-block; padding: 1rem 2rem; border-radius: 8px;">
+                        <p><strong>Date:</strong> TBD</p>
+                        <p><strong>Time:</strong> TBD</p>
+                        <p><strong>Place:</strong> TBD</p>
+                    </div>
+                </center>
+            </section>
+        </div>
+    </div>
+
+    <div class="nav-menu">
+        <a href="#abstract">Introduction</a>
+        <a href="#audience">Audience</a>
+        <a href="#outline">Outline</a>
+        <a href="#presenters">Presenters</a>
+        <a href="#video">Video</a>
+    </div>
+
+    <div id="main" role="main">
+        <div class="page__inner-wrap">
+            <section class="page__content" itemprop="text">
+                <h2 id="abstract">Introduction</h2>
+                <p style="margin: 0.8rem 0; line-height: 1.5; color: #2c3e50;">Human mobility analytics has become increasingly important in various domains including urban planning, transportation, public health, and social science. With the rapid development of web technologies and the emergence of large language models (LLMs), web-centric approaches to human mobility analytics have gained significant attention. This tutorial provides a comprehensive overview of web-centric human mobility analytics, covering methods, applications, and future directions in the LLM era. We discuss how web data sources, web-based analytical techniques, and web platforms can be leveraged to understand, model, and predict human mobility patterns. Furthermore, we explore how LLMs are transforming this field by enabling more sophisticated natural language understanding and generation capabilities for mobility data analysis.</p>
+
+                <div class="framework-section">
+                    <img src="assets/images/framework.jpg" alt="Framework Overview" style="max-width: 70%; height: auto; margin: 15px 0;">
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h2 id="audience">Intended Audience</h2>
+                <p style="margin-bottom: 0.8rem;">This tutorial is designed for professionals, researchers, and practitioners interested in human mobility analytics, assuming basic knowledge of AI and data analysis.</p>
+                <p>Attendees will gain understanding of mobility analytics methodologies across location, individual, and macro levels, plus advanced frameworks like federated learning and causal inference for real-world applications.</p>
+
+                <div class="section-divider"></div>
+
+                <h2 id="outline">Tutorial Outline</h2>
+                <div style="margin: 1rem 0;">
+                    <p style="margin: 0.5rem 0; color: #2c3e50;"><strong>S1. Welcome and Introduction (10 mins)</strong> <!-- - Presenter: Christian S. Jensen --></p>
+                    <ul style="margin: 0.3rem 0 0.8rem 1.2rem;">
+                        <li>1.1 Overview of Human Mobility Analytics</li>
+                    </ul>
+
+                    <p style="margin: 0.5rem 0; color: #2c3e50;"><strong>S2. Location-Level Human Mobility Analytics: (40 mins)</strong> <!-- - Presenter: Yuxuan Liang --></p>
+                    <ul style="margin: 0.3rem 0 0.8rem 1.2rem;">
+                        <li>2.1 Predictive Modeling for Next Location Visits</li>
+                        <li>2.2 Applications of Location-Level Analytics</li>
+                    </ul>
+
+                    <p style="margin: 0.5rem 0; color: #2c3e50;"><strong>S3. Individual-Level Human Mobility Analytics: (40 mins)</strong> <!-- - Presenter: Yan Zhao --></p>
+                    <ul style="margin: 0.3rem 0 0.8rem 1.2rem;">
+                        <li>3.1 Trajectory Compression</li>
+                        <li>3.2 Trajectory Recovery</li>
+                    </ul>
+
+                    <p style="margin: 0.5rem 0; color: #2c3e50;"><strong>S4. Macro-Level Human Mobility Analytics: (40 mins)</strong> <!-- - Presenter: Zijian Zhang and Xiao Han --></p>
+                    <ul style="margin: 0.3rem 0 0.8rem 1.2rem;">
+                        <li>4.1 Regional Crowd Flows Modeling</li>
+                        <li>4.2 Universal Knowledge Modeling</li>
+                    </ul>
+
+                    <p style="margin: 0.5rem 0; color: #2c3e50;"><strong>S5. Advanced Learning Framework: (30 mins)</strong> <!-- - Presenter: Hao Miao --></p>
+                    <ul style="margin: 0.3rem 0 0.8rem 1.2rem;">
+                        <li>5.1 Federated Human Mobility Learning</li>
+                        <li>5.2 Spatio-Temporal Continuous Learning</li>
+                        <li>5.3 Foundation Models (e.g., LLMs) for Mobility: Challenges, Applications, and Directions</li>
+                    </ul>
+
+                    <p style="margin: 0.5rem 0; color: #2c3e50;"><strong>S6. Conclusion and Open Discussion: (20 mins)</strong> <!-- - Presenter: Bin Yang and Pengyue Jia --></p>
+                    <ul style="margin: 0.3rem 0 0.8rem 1.2rem;">
+                        <li>6.1 Conclusions</li>
+                        <li>6.2 Questions and Discussions</li>
+                    </ul>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h2 id="presenters">Presenters</h2>
+                <div class="authors-grid" style="grid-template-columns: repeat(4, 1fr); gap: 1.5em; margin-top: 1.5em;">
+                    <div class="author-info">
+                        <div class="author-details">
+                            <img src="assets/images/zzj.jpg" alt="Zijian Zhang" class="author-avatar">
+                            <h3>Zijian Zhang</h3>
+                            <p>Jilin University</p>
+                            <div class="author-links">
+                                <a href="https://zhangzj2114.github.io/" target="_blank"><i class="fas fa-globe"></i> Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="author-info">
+                        <div class="author-details">
+                            <img src="assets/images/mh.jpg" alt="Hao Miao" class="author-avatar">
+                            <h3>Hao Miao</h3>
+                            <p>Aalborg University</p>
+                            <div class="author-links">
+                                <a href="https://haomiao.website/" target="_blank"><i class="fas fa-globe"></i> Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="author-info">
+                        <div class="author-details">
+                            <img src="assets/images/lyx.jpg" alt="Yuxuan Liang" class="author-avatar">
+                            <h3>Yuxuan Liang</h3>
+                            <p>HKUST(GZ)</p>
+                            <div class="author-links">
+                                <a href="https://yuxuanliang.com/" target="_blank"><i class="fas fa-globe"></i> Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="author-info">
+                        <div class="author-details">
+                            <img src="assets/images/zy.jpg" alt="Yan Zhao" class="author-avatar">
+                            <h3>Yan Zhao</h3>
+                            <p>UESTC</p>
+                            <div class="author-links">
+                                <a href="https://yan20191113.github.io/" target="_blank"><i class="fas fa-globe"></i> Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="author-info">
+                        <div class="author-details">
+                            <img src="assets/images/hx.jpg" alt="Xiao Han" class="author-avatar">
+                            <h3>Xiao Han</h3>
+                            <p>CityU</p>
+                            <div class="author-links">
+                                <a href="https://hahahenha.github.io/" target="_blank"><i class="fas fa-globe"></i> Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="author-info">
+                        <div class="author-details">
+                            <img src="assets/images/jpy.jpg" alt="Pengyue Jia" class="author-avatar">
+                            <h3>Pengyue Jia</h3>
+                            <p>CityU</p>
+                            <div class="author-links">
+                                <a href="https://jia-py.github.io/" target="_blank"><i class="fas fa-globe"></i> Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="author-info">
+                        <div class="author-details">
+                            <img src="assets/images/yb.jpg" alt="Bin Yang" class="author-avatar">
+                            <h3>Bin Yang</h3>
+                            <p>ECNU</p>
+                            <div class="author-links">
+                                <a href="https://dase.ecnu.edu.cn/37/77/c41774a538487/page.htm" target="_blank"><i class="fas fa-globe"></i> Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="author-info">
+                        <div class="author-details">
+                            <img src="assets/images/chri.jpg" alt="Christian S. Jensen" class="author-avatar">
+                            <h3>Christian S. Jensen</h3>
+                            <p>Aalborg University</p>
+                            <div class="author-links">
+                                <a href="https://csj.cs.aau.dk/" target="_blank"><i class="fas fa-globe"></i> Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="video">Video</h2>
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 15px 0; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.15); background: #000;">
+                    <video id="tutorial-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" controls preload="metadata" poster="assets/images/framework.jpg">
+                	    <source src="assets/video.mp4" type="video/mp4">
+                	    Your browser does not support the video tag.
+                    </video>
+                </div>
+
+<script>
+    window.onload = function() {
+        var video = document.getElementById("tutorial-video");
+        video.currentTime = 0; // Set video to start from 1 second
+    };
+</script>
+                <p style="text-align: center; margin-top: 15px; color: #666; font-size: 0.95em;">Watch our tutorial video teaser to learn more about web-centric human mobility analytics</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="page__footer">
+        <footer>
+            <div class="page__footer-copyright">&copy; 2025 WWW Tutorial Team, Tsinghua University</div>
+        </footer>
+    </div>
+</body>
+</html>
